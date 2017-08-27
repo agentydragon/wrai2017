@@ -1,6 +1,8 @@
 README
 ===
+
 TODO: favicon
+TODO: add mailing list sign-up
 
 Bootstrap is licensed under MIT license.
 
