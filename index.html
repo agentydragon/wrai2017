@@ -1,0 +1,241 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+
+
+<!-- TODO: bigger "REGISTER" button -->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+	<!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">WRAI 2017</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                        <li>
+                                <a href="https://goo.gl/forms/7Ov1HBIByMlIXIyV2">Register</a>
+                        </li>
+                        <li>
+                                <a href="#contact">Contact</a>
+                        </li>
+                </ul>
+								<!--
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+								-->
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1 style="font-size: 280%">
+				  Workshop on Reliable Artificial Intelligence 2017
+				</h1>
+				<h2 style="font-size: 200%">
+				  Saturday 28 October 2017, Venue: TBD <!-- TODO(Matthew): confirm venue -->
+				</h2>
+        <p>
+          One-day workshop on technical aspects of building robust and safe agents.
+          Topics include safe reinforcement learning, control and exploration,
+          value learning, scalable oversight, robustnes of ML systems against
+          adversarial examples, and provably correct agents.
+        </p>
+        <p style="text-align: center;">
+        <a class="btn btn-primary btn-lg" href="https://goo.gl/forms/7Ov1HBIByMlIXIyV2"
+                role="button" style="font-size: 140%">Register &raquo;</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-12">
+         <h2>Information</h2>
+         <p>
+           The workshop will run thorough the whole day of Saturday 28 October 2017.
+           Most of the content will be talks given by invited speakers, and there will be ample
+           room for discussion over light refreshments and dinner.
+           The venue has not been decided yet, but most likely the workshop will take place
+           at a facility of ETH Zurich or the University of Zurich.
+           We are inviting both speakers and attendees from a wide range of disciplines
+           adjacent to the design of safe AI, including experts in machine learning, robotics,
+           and theory of agent design.
+         </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+         <h2>Topics</h2>
+         <p>
+           With recent rapid progress in machine learning and artificial intelligence,
+           expert attention is increasingly turning to their impact on society.
+           Misapplications of AI, design errors, or badly specified objectives are
+           possible ways AI systems could cause serious incidents in the future.
+           Multiple institutions both public and private, including <a href="https://openai.com/">OpenAI</a>,
+           <a href="https://deepmind.com/">DeepMind</a>, <a href="https://www.fhi.ox.ac.uk/">Future of Humanity Institute</a>
+           at the University of Oxford, and the <a href="https://intelligence.org/">Machine Intelligence Research Institute</a>
+           are working on developing advancements upon existing AI systems to make them
+           more secure against such failure modes, or on foundational extensions of
+           the field of AI to allow construction of agents which are secure by design.
+         </p>
+         <p>
+           For more information, see the paper <a href="https://arxiv.org/abs/1606.06565">Concrete Problems in AI Safety</a> by Amodei et al.
+           Topics of the workshop will include:
+         </p>
+           
+                                </div>
+                <div class="col-md-4">
+                        <h3>Safe reinforcement learning</h3>
+                        <p>
+                          Reinforcement learning is powerful for learning to perform tasks
+                          with a goal which is itself hard to specify. However, reinforcement learners
+                          are prone to several problems.
+                          For instance, a naively implemented reinforcement learner embedded in the real
+                          world may cause damage to both itself and its environment if it's just curiously
+                          trying to explore which actions lead to rewards without side constraints on which
+                          actions are "reasonable". <i>Safe exploration</i> is the problem of allowing exploration
+                          in an unknown environment while avoiding very undesirable actions.
+                        </p>
+                </div>
+                <div class="col-md-4">
+                        <h3>Value learning</h3>
+                        <p>
+                          The goals that we want AI to fulfill in the real world are complex,
+                          and especially as we allow AIs more agency to manipulate the real world,
+                          a misalignment between what we want from an AI and what it is optimizing
+                          for may have bad consequences. Because directly encoding complex values
+                          is hard, especially if we would aim for the project of encoding
+                          the whole of human values, some researchers are exploring <i>reverse reinforcement learning</i>.
+                          In reinforcement learning, an AI is observing a utility function and trying to learn a good policy.
+                          In inverse reinforcement learning, the AI is observing an agent acting in an environment,
+                          and trying to learn the utility function the agent is attempting to maximize.
+                          This framework is useful for training AIs to perform hard-to-encode tasks,
+                          such as "do a backflip".
+                        </p>
+                </div>
+                <div class="col-md-4">
+                        <h3>Robustness against adversarial examples</h3>
+                        <p>
+                          In <a href="https://arxiv.org/abs/1412.6572">Explaining and Harnessing Adversarial Examples</a>,
+                          Goodfellow, Shlens and Szegedy showed that neural nets trained on standard datasets
+                          can be easily attacked. A network trained on ImageNet will not only say that a picture
+                          of a panda does with high confidence indeed display a panda, but an adversary can
+                          also produce a noise pattern which is also recognized as a panda with high confidence,
+                          or can apply a slight perturbation to a picture of a panda which makes the net
+                          suddenly recognize it as a cat, even through humans still clearly recognize
+                          the picture as a panda.
+                          This discovery has problematic security implications.
+                          Can we build ML systems which are more tamper-proof, or which
+                          at least detect examples drawn from a distribution they were not trained on?
+                        </p>
+                </div>
+      </div>
+        <div class="row">
+                <div class="col-md-12">
+                  <h2>Speakers</h2>
+                </div>
+					<div class="col-md-4">
+						<h3>Ian Goodfellow</h3>
+						<h4>Research Scientist, Google Brain</h4>
+						<p>Known for the invention of Generative Adversarial Networks, Ian received his PhD under the supervision of Yoshua Bengio from the Université de Montréal. He has since worked at OpenAI and Google Brain.</p>
+					</div>
+					<div class="col-md-4">
+						<h3>Felix Berkenkamp</h3>
+						<h4>PhD student, Learning and Adaptive Systems Group, ETH Zurich</h4>
+						<p>Having completed an MSc in Mechanical Engineering at ETH Zurich with thesis research at the University of Toronto, Felix's doctoral research focuses on saf exploration in robotics.</p>
+					</div>
+					<div class="col-md-4">
+						<h3>Will Sawin</h3>
+						<h4>Junior Fellow, Institute for Theoretical Studies, ETH Zurich</h4>
+						<p>Will completed his PhD in Mathematics at Princeton University and is now a Junior Fellow at ETH-ITS. His main field of study is arithmetic algebraic geometry, but he has also made significant contributions to combinatorics, category theory and intelligent agent foundations.</p>
+					</div>
+					<div class="col-md-4">
+						<h3>Kaspar Etter</h3>
+						<h4>Technical co-founder, Syntacts GmbH</h4>
+						<p>During his studies in Computer Science at ETH Zurich, Kaspar developed an interest in the risks of AI, going on to found superintelligence.ch and speaking about the topic at a number of events in Switzerland and Germany. He is also the co-founder of Syntacts, a startup based on the Digital ID protocol Kaspar developed at ETH.</p>
+					</div>
+			</div>
+        <div class="row">
+                <a name="contact"><h2>Contact</h2></a>
+                <p>
+                The Workshop on Reliable Artificial Intelligence is organized by volunteers from <a href="https://www.facebook.com/groups/MIRIxZurich/">MIRIx Zürich</a>.
+                You can contact us at <a href="mailto:wrai@gmail.com">wrai@gmail.com</a>.
+                </p>
+        </div>
+			<!--
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+			-->
+
+      <hr>
+
+      <footer>
+              <a href="http://intelligence.org"><img src="img/miri-200.png" style="float: left"></a>
+                <p>
+                The Workshop on Reliable Artificial Intelligence is organized by volunteers from <a href="https://www.facebook.com/groups/MIRIxZurich/">MIRIx Zürich</a>
+                and financed from a donation by the <a href="http://intelligence.org">Machine Intelligence Research Institute</a>.
+                </p>
+                <p>
+                Contact: <a href="mailto:wrai@gmail.com">wrai@gmail.com</a>
+                </p>
+      </footer>
+    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-105407154-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>
