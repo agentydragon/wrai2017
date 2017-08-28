@@ -50,29 +50,17 @@
                                 <a href="#contact">Contact</a>
                         </li>
                 </ul>
-								<!--
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-								-->
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
         <h1 style="font-size: 280%">
 				  Workshop on Reliable Artificial Intelligence 2017
 				</h1>
 				<h2 style="font-size: 200%">
-				  Saturday 28 October 2017, Venue: TBD, Zurich <!-- TODO(Matthew): confirm venue -->
+				  Saturday 28 October 2017, Venue: ETH Zürich<!-- TODO(Matthew): confirm venue -->
 				</h2>
         <p>
           One-day workshop on technical aspects of building robust and safe agents.
@@ -93,11 +81,11 @@
         <div class="col-md-12">
          <h2>Information</h2>
          <p>
-           The workshop will run thorough the whole day of Saturday 28 October 2017.
+           The workshop will run through the whole day of Saturday 28 October 2017.
            Most of the content will be talks given by invited speakers, and there will be ample
            room for discussion over light refreshments and dinner.
            The venue has not been decided yet, but most likely the workshop will take place
-           at a facility of ETH Zurich or the University of Zurich.
+           at a facility of ETH Zürich.
            We are inviting both speakers and attendees from a wide range of disciplines
            adjacent to the design of safe AI, including experts in machine learning, robotics,
            and theory of agent design.
@@ -163,11 +151,26 @@
                           of a panda does with high confidence indeed display a panda, but an adversary can
                           also produce a noise pattern which is also recognized as a panda with high confidence,
                           or can apply a slight perturbation to a picture of a panda which makes the net
-                          suddenly recognize it as a cat, even through humans still clearly recognize
+                          suddenly recognize it as a cat, even though humans still clearly recognize
                           the picture as a panda.
                           This discovery has problematic security implications.
                           Can we build ML systems which are more tamper-proof, or which
                           at least detect examples drawn from a distribution they were not trained on?
+                        </p>
+                </div>
+                <div class="col-md-4">
+                        <h3>Intelligent agent foundations</h3>
+                        <p>
+			  In order to achieve high reliability and security, for example in access protocols for
+			  military intelligence, one may use systems that can be specified and verified formally.
+			  If we have a formal specification for an intelligent agent, we can use mathematical
+			  logic to reason with high confidence about how it will interact with the environment
+			  and other agents before we even know how to implement the agent. For instance, we
+			  may be able to prove that it will, say, avoid creating a disaster, cooperate with some
+			  other agent, or trust a future version of itself.
+			  One recent example of significant progress in this area is the framework of
+			  <a href="https://intelligence.org/files/LogicalInduction.pdf">Logical Induction</a>
+			  by Garrabrant, Benson-Tilsen, Critch, Soares and Taylor.
                         </p>
                 </div>
       </div>
@@ -182,24 +185,24 @@
 					</div>
 					<div class="col-md-4">
 						<h3>Felix Berkenkamp</h3>
-						<h4>PhD student, Learning and Adaptive Systems Group, ETH Zurich</h4>
-						<p>Having completed an MSc in Mechanical Engineering at ETH Zurich with thesis research at the University of Toronto, Felix's doctoral research focuses on saf exploration in robotics.</p>
+						<h4>PhD student, Learning and Adaptive Systems Group, ETH Zürich</h4>
+						<p>Having completed an MSc in Mechanical Engineering at ETH Zürich with thesis research at the University of Toronto, Felix's doctoral research focuses on saf exploration in robotics.</p>
 					</div>
 					<div class="col-md-4">
 						<h3>Will Sawin</h3>
-						<h4>Junior Fellow, Institute for Theoretical Studies, ETH Zurich</h4>
+						<h4>Junior Fellow, Institute for Theoretical Studies, ETH Zürich</h4>
 						<p>Will completed his PhD in Mathematics at Princeton University and is now a Junior Fellow at ETH-ITS. His main field of study is arithmetic algebraic geometry, but he has also made significant contributions to combinatorics, category theory and intelligent agent foundations.</p>
 					</div>
 					<div class="col-md-4">
 						<h3>Kaspar Etter</h3>
 						<h4>Technical co-founder, Syntacts GmbH</h4>
-						<p>During his studies in Computer Science at ETH Zurich, Kaspar developed an interest in the risks of AI, going on to found superintelligence.ch and speaking about the topic at a number of events in Switzerland and Germany. He is also the co-founder of Syntacts, a startup based on the Digital ID protocol Kaspar developed at ETH.</p>
+						<p>During his studies in Computer Science at ETH Zürich, Kaspar developed an interest in the risks of AI, going on to found superintelligence.ch and speaking about the topic at a number of events in Switzerland and Germany. He is also the co-founder of Syntacts, a startup based on the Digital ID protocol Kaspar developed at ETH.</p>
 					</div>
 			</div>
         <div class="row">
                 <a name="contact"><h2>Contact</h2></a>
                 <p>
-                The Workshop on Reliable Artificial Intelligence is organized by volunteers from <a href="https://www.facebook.com/groups/MIRIxZurich/">MIRIx Zürich</a>.
+                The Workshop on Reliable Artificial Intelligence is organized by MIRIx Zürich.
                 You can contact us at <a href="mailto:wrai@gmail.com">wrai@gmail.com</a>.
                 </p>
         </div>
@@ -210,11 +213,17 @@
       <hr>
 
       <footer>
-              <a href="http://intelligence.org"><img src="img/miri-200.png" style="float: left"></a>
+	      <center>
+		      <a href="https://www.ethz/ch/en.html"><img src="img/eth-200.png" alt="ETH Zürich logo"></a> <!-- style="float: left; clear: left">-->
+		      <a href="http://intelligence.org">
+		      <img src="img/miri-200.png" alt="MIRI logo"><!-- style="float: left; clear: left">-->
+		      </a>
+	      </center>
                 <p>
-                The Workshop on Reliable Artificial Intelligence is organized by volunteers from <a href="https://www.facebook.com/groups/MIRIxZurich/">MIRIx Zürich</a>
-                and financed from a donation by the <a href="http://intelligence.org">Machine Intelligence Research Institute</a>.
-                </p>
+                The Workshop on Reliable Artificial Intelligence is organized by MIRIx Zürich
+		and sponsored by <a href="https://www.ethz.ch/en.html">ETH Zürich</a> and
+		the <a href="http://intelligence.org">Machine Intelligence Research Institute</a>.
+		</p>
                 <p>
                 Contact: <a href="mailto:wrai@gmail.com">wrai@gmail.com</a>
                 </p>
