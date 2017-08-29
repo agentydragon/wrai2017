@@ -14,5 +14,7 @@ Deploy
 To deploy, run:
 
 ```
+# TODO(prvak): Add exclusion for .git
 aws s3 sync --acl public-read --sse --delete . s3://www.wrai.org
+aws s3 rm --recursive s3://www.wrai.org/.git
 ```
