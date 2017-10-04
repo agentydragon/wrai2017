@@ -71,9 +71,8 @@
       <div class="container">
 	      <p>
           One-day workshop on technical aspects of building robust and safe agents.
-          Topics include safe reinforcement learning, control and exploration,
-          value learning, scalable oversight, robustness of ML systems against
-          adversarial examples, and provably correct agents.
+          Topics include safe reinforcement learning, safe control and exploration, value learning,
+	  and formal analysis of agent behaviour.
         </p>
         <p style="text-align: center;">
         <a class="btn btn-primary btn-lg" href="https://goo.gl/forms/7Ov1HBIByMlIXIyV2"
@@ -86,101 +85,82 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-12">
-         <h2>Information</h2>
+         <h2>Overview</h2>
+	 <p>
+           With recent rapid progress in machine learning and artificial intelligence,
+           expert attention is increasingly turning to the impact of these fields on society.
+	   An awareness is growing of the potential for serious incidents to occur through,
+	   for example, design error, badly-specified objectives, or plain misapplication of AI.
+	</p>
+
+	<p>
+           Multiple institutions both public and private are therefore working on developing
+	   improvements to existing AI systems to make them more secure against such failure modes,
+	   or on foundational extensions of the field of AI to allow construction of agents which
+	   are secure by design. These institutions include <a href="https://openai.com/">OpenAI</a>,
+           <a href="https://deepmind.com/">DeepMind</a>, the <a href="https://www.fhi.ox.ac.uk/">Future of Humanity Institute</a>
+           at the University of Oxford, and the <a href="https://intelligence.org/">Machine Intelligence Research Institute</a>.
+	 </p>
          <p>
-           The workshop will run through the whole day of Saturday 28 October 2017,
-	   starting at 9:30 and closing at 17:45.
-           Most of the content will be talks given by invited speakers, and there will be ample
-           room for discussion over light refreshments and dinner.
-	   The workshop will take place at ETH Zürich.
-           We are inviting both speakers and attendees from a wide range of disciplines
-           adjacent to the design of safe AI, including experts in machine learning, robotics,
-           and theory of agent design.
+	   The Workshop on Reliable Artificial Intelligence 2017 brings a taste of this research to Zürich, Switzerland.
+	   The workshop will take place on <b>Saturday the 28th of October 2017</b>, running <b>from 9:30 until 18:00</b>, at
+	   the <b>LEE building</b>, <b>room E 101</b>, at <b>ETH Zürich</b>. The day will consist of talks from invited speakers,
+	   followed by discussion in the late afternoon.
          </p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-         <h2>Topics</h2>
-         <p>
-           With recent rapid progress in machine learning and artificial intelligence,
-           expert attention is increasingly turning to their impact on society.
-           Misapplications of AI, design errors, or badly specified objectives are
-           possible ways AI systems could cause serious incidents in the future.
-           Multiple institutions both public and private, including <a href="https://openai.com/">OpenAI</a>,
-           <a href="https://deepmind.com/">DeepMind</a>, <a href="https://www.fhi.ox.ac.uk/">Future of Humanity Institute</a>
-           at the University of Oxford, and the <a href="https://intelligence.org/">Machine Intelligence Research Institute</a>
-           are working on developing advancements upon existing AI systems to make them
-           more secure against such failure modes, or on foundational extensions of
-           the field of AI to allow construction of agents which are secure by design.
-         </p>
-         <p>
-           For more information, see the paper <a href="https://arxiv.org/abs/1606.06565">Concrete Problems in AI Safety</a> by Amodei et al.
-           Topics of the workshop will include:
-         </p>
-           
-                                </div>
-                <div class="col-md-4">
-                        <h3>Safe reinforcement learning</h3>
-                        <p>
-                          Reinforcement learning is powerful for learning to perform tasks
-                          with a goal which is itself hard to specify. However, reinforcement learners
-                          are prone to several problems.
-                          For instance, a naively implemented reinforcement learner embedded in the real
-                          world may cause damage to both itself and its environment if it's just curiously
-                          trying to explore which actions lead to rewards without side constraints on which
-                          actions are "reasonable". <i>Safe exploration</i> is the problem of allowing exploration
-                          in an unknown environment while avoiding very undesirable actions.
-                        </p>
-                </div>
-                <div class="col-md-4">
-                        <h3>Value learning</h3>
-                        <p>
-                          The goals that we want AI to fulfill in the real world are complex,
-                          and especially as we allow AIs more agency to manipulate the real world,
-                          a misalignment between what we want from an AI and what it is optimizing
-                          for may have bad consequences. Because directly encoding complex values
-                          is hard, especially if we would aim for the project of encoding
-                          the whole of human values, some researchers are exploring <i>reverse reinforcement learning</i>.
-                          In reinforcement learning, an AI is observing a utility function and trying to learn a good policy.
-                          In inverse reinforcement learning, the AI is observing an agent acting in an environment,
-                          and trying to learn the utility function the agent is attempting to maximize.
-                          This framework is useful for training AIs to perform hard-to-encode tasks,
-                          such as "do a backflip".
-                        </p>
-                </div>
-                <div class="col-md-4">
-                        <h3>Robustness against adversarial examples</h3>
-                        <p>
-                          In <a href="https://arxiv.org/abs/1412.6572">Explaining and Harnessing Adversarial Examples</a>,
-                          Goodfellow, Shlens and Szegedy showed that neural nets trained on standard datasets
-                          can be easily attacked. A network trained on ImageNet will not only say that a picture
-                          of a panda does with high confidence indeed display a panda, but an adversary can
-                          also produce a noise pattern which is also recognized as a panda with high confidence,
-                          or can apply a slight perturbation to a picture of a panda which makes the net
-                          suddenly recognize it as a cat, even though humans still clearly recognize
-                          the picture as a panda.
-                          This discovery has problematic security implications.
-                          Can we build ML systems which are more tamper-proof, or which
-                          at least detect examples drawn from a distribution they were not trained on?
-                        </p>
-                </div>
-                <div class="col-md-4">
-                        <h3>Intelligent agent foundations</h3>
-                        <p>
-			  In order to achieve high reliability and security, for example in access protocols for
-			  military intelligence, one may use systems that can be specified and verified formally.
-			  If we have a formal specification for an intelligent agent, we can use mathematical
-			  logic to reason with high confidence about how it will interact with the environment
-			  and other agents before we even know how to implement the agent. For instance, we
-			  may be able to prove that it will, say, avoid creating a disaster, cooperate with some
-			  other agent, or trust a future version of itself.
-			  One recent example of significant progress in this area is the framework of
-			  <a href="https://intelligence.org/files/LogicalInduction.pdf">Logical Induction</a>
-			  by Garrabrant, Benson-Tilsen, Critch, Soares and Taylor.
-                        </p>
-                </div>
+         <h2>Talks</h2>
+	</div>
       </div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<h3>Reinforcement Learning with a Corrupted Reward Channel</h3>
+				<h4>Victoria Krakovna</h4>
+				<p>
+	No real-world reward function is perfect. Reward misspecifications, sensory errors, and software bugs may result in RL agents observing higher (or lower) rewards in some states than they should, which can lead to undesirable or dangerous behavior. We formalize this problem as a generalized Markov Decision Problem, and show that traditional RL methods fare poorly in this setting, even under strong simplifying assumptions and when trying to compensate for the possibly corrupt rewards. We develop an abstract framework for giving the agent richer data by cross-checking reward information between different states. This framework encompasses inverse reinforcement learning and semi-supervised reinforcement learning, and helps the agent overcome reward corruption under some assumptions.
+				</p>
+			</div>
+
+			<div class="col-md-6">
+				<h3>Trial without Error: Towards Safe Reinforcement Learning via Human Intervention</h3>
+				<h4>Owain Evans</h4>
+				<p>
+	AI systems are increasingly applied to complex tasks that involve interaction with humans. During training, such systems are potentially dangerous, as they haven't yet learned to avoid actions that could cause serious harm. How can an AI system explore and learn without making a single mistake that harms humans or otherwise causes serious damage? For model-free reinforcement learning, having a human "in the loop" and ready to intervene is currently the only way to prevent all catastrophes. We formalize human intervention for RL and show how to reduce the human labor required by training a supervised learner to imitate the human's intervention decisions. We evaluate this scheme on Atari games, with a Deep RL agent being overseen by a human for four hours.
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<h3>Growing Robust & Safe AI: Let's be Realistic</h3>
+				<h4>Bas Steunebrink</h4>
+				<p>
+	Learning values and ethics under pragmatic real-world constraints requires a new developmental approach to training AIs. This approach places significantly more responsibility on the "teachers" of AI than on the designers and builders. For an AI to move from brittle to robust understanding of what the referents of (possibly evolving) ethics specifications really mean, it needs to properly ground its knowledge in the pragmatics of the world. Therefore the developmental approach entails that we not only figure out which things to teach in which order, but also how to measure progress, such that it becomes feasible to ultimately certify the robustness of the AI to predict ethics violations and report and act accordingly.
+				</p>
+			</div>
+
+			<div class="col-md-6">
+				<h3>Models of Program Equilibrium</h3>
+				<h4>Will Sawin</h4>
+				<p>
+	The field of program equilibrium studies what happens when we design an AI which must choose to cooperate or compete with another AI with independent goals, where both AIs can see each other's source code and thus predict each other's behavior. New strategies and equilibria occur, and it is not at all clear what the best strategy is. We discuss the already nontrivial case where each AI's behavior in a game only depends on the other AI's behavior when playing against simpler programs of the same type.
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<h3>Safe Reinforcement Learning in Robotics with Bayesian Models</h3>
+				<h4>Felix Berkenkamp</h4>
+				<p>
+	Reinforcement learning is a powerful paradigm for learning optimal policies from experimental data. However, most reinforcement learning algorithms rely on random exploration to find optimal policies, which may be harmful in real-world systems such as robots. As a consequence, learning algorithms are rarely applied on safety-critical systems in the real world. In this talk, we show how the uncertainty information in Bayesian models can be used to make safe and informed decisions both in policy search and model-based reinforcement learning. Moreover, we show how these algorithms can be applied to physical quadrotor vehicles.
+				</p>
+			</div>
+		</div>
+
         <div class="row">
                 <div class="col-md-12">
                   <h2>Speakers</h2>
@@ -223,11 +203,13 @@
 	</div>
 	</div>
         <div class="row">
-                <a name="contact"><h2>Contact</h2></a>
+                <div class="col-md-12">
+                <h2>Contact</h2>
                 <p>
                 The Workshop on Reliable Artificial Intelligence is organized by MIRIxZürich.
                 You can contact us at <a href="mailto:wrai-workshop@ethz.ch">wrai-workshop@ethz.ch</a>.
                 </p>
+		</div>
         </div>
 			<!--
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
